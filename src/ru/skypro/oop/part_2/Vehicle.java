@@ -17,7 +17,17 @@ public abstract class Vehicle {
         return wheelsCount;
     }
 
-    public void updateTyre() {
+    public void printUpdateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    public void updateTyre(Vehicle vehicle) {
+        for (int i = 0; i < vehicle.getWheelsCount(); i++) {
+            vehicle.printUpdateTyre();
+        }
+    }
+
+    public void printCheckedModel(Vehicle vehicle) {
+        System.out.println("Обслуживаем " + vehicle.getModelName());
     }
 }
