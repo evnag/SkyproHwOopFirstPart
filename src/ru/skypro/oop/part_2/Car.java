@@ -10,10 +10,8 @@ public class Car extends Vehicle implements Checkable{
     }
 
     public void checkVehicle() {
-        if (this != null) {
-            printCheckedModel(this);
-            updateTyre(this);
-            this.checkEngine();
-        }
+        printCheckedModel(this);
+        updateTyre(this);
+        this.checkEngine();
     }
 }

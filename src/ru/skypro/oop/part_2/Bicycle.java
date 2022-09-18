@@ -6,9 +6,7 @@ public class Bicycle extends Vehicle implements Checkable {
     }
 
     public void checkVehicle() {
-        if (this != null) {
-            printCheckedModel(this);
-            updateTyre(this);
-        }
+        printCheckedModel(this);
+        updateTyre(this);
     }
 }
